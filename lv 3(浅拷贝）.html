@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浅拷贝</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var person = {
+        name: 'MYY',
+        age: '19',
+        hobby: 'badminton',
+        address: {
+            city: 'CQ',
+            area: {
+                mountain: 'nanshan',
+                university: 'CQUPT',
+            }
+        }
+    }
+    //对象
+
+    var a = {};
+    //建立一个空对象
+
+    for (var k in person) {
+        a[k] = person[k];
+    }
+    //通过循环将person里面的属性名和属性值取出
+    //k为属性名，a[k]和person[k]为属性值
+
+    console.log(a);
+</script>
+
+</html>
